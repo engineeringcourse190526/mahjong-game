@@ -15,6 +15,6 @@ set_property(TARGET cpputest_ext PROPERTY
         IMPORTED_LOCATION $ENV{CPPUTEST_HOME_LIB}/libCppUTestExt.a)
 
 add_executable(mahjong-test ${Test_SRCS})
-target_link_libraries(mahjong-test cpputest cpputest_ext exercise html_ui mahjong_game)
+target_link_libraries(mahjong-test cpputest cpputest_ext html_ui mahjong_game exercise)
 
 

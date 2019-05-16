@@ -9,5 +9,5 @@ include_directories(${PROJECT_SOURCE_DIR}/src/html_ui)
 file(COPY ../htdocs DESTINATION ${CMAKE_BINARY_DIR}/src)
 
 add_executable(game main.c)
-target_link_libraries(game mahjong_game mahjong_evaluator exercise html_ui)
+target_link_libraries(game html_ui mahjong_game mahjong_evaluator exercise)
 
